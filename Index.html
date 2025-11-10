@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validación de Dispositivos</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- Iconos de Font Awesome para los logos de cámara y micrófono -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Botón para abrir el popup de prueba -->
+    <button id="open-modal-btn">Validar mis dispositivos</button>
+
+    <!-- ==== INICIO DEL CÓDIGO DEL POPUP ==== -->
+    <div id="device-validator-modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <button class="close-button" id="close-modal-btn">&times;</button>
+            
+            <div class="modal-header">
+                <h2>Validación de Dispositivos</h2>
+                <p>Configura y prueba tus dispositivos</p>
+            </div>
+
+            <div class="device-selectors">
+                <div class="device-control">
+                    <label for="camera-select"><i class="fas fa-video"></i> Cámara</label>
+                    <select id="camera-select"></select>
+                </div>
+                <div class="device-control">
+                    <label for="mic-select"><i class="fas fa-microphone"></i> Micrófono</label>
+                    <select id="mic-select"></select>
+                </div>
+            </div>
+
+            <div class="device-previews">
+                <div class="video-preview-container">
+                    <video id="video-preview" autoplay muted playsinline></video>
+                    <span class="status-badge video-active">Video Activo</span>
+                </div>
+                <div class="audio-preview-container">
+                    <div id="audio-verified-badge" class="status-badge audio-verified hidden">
+                        <i class="fas fa-check-circle"></i> Audio Verificado
+                    </div>
+                    <div class="audio-visualizer">
+                        <!-- Los puntos del visualizador se generarán con JS -->
+                    </div>
+                    <div class="status-badge audio-active">
+                        <span class="live-indicator"></span> Audio Activo
+                    </div>
+                    <!-- El botón para detener no es necesario, el flujo se controla con Confirmar/Cancelar -->
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button id="cancel-btn" class="btn btn-secondary">Cancelar</button>
+                <button id="confirm-btn" class="btn btn-primary">Confirmar</button>
+            </div>
+        </div>
+    </div>
+    <!-- ==== FIN DEL CÓDIGO DEL POPUP ==== -->
+
+    <script src="/assets/js/script.js"></script>
+</body>
+</html>
