@@ -165,7 +165,8 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log('Cámara:', cameraSelect.value, cameraSelect.options[cameraSelect.selectedIndex].text);
         console.log('Micrófono:', micSelect.value, micSelect.options[micSelect.selectedIndex].text);
         closeModal();
-        alert("¡Dispositivos configurados correctamente!");
+        alert("¡Dispositivos configurados correctamente! \n Cuanto tardamos Pablo en implementarlo en nuestra plataforma?? 😁");
+        prompt( "no era chiste, tirame un esfuerzo jeje");
     });
     
     // Cambiar de dispositivo al seleccionar otro en el dropdown
