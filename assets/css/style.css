@@ -1,10 +1,10 @@
 :root {
     --primary-color: #285e62;
-    --success-color: #28a745;
+    --success-color: #285e62;
     --danger-color: #dc3545;
     --light-gray: #f8f9fa;
     --medium-gray: #e9ecef;
-    --dark-gray: #6c757d;
+    --dark-gray: #285e62;
     --text-color: #212529;
     --border-radius: 12px;
     --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
