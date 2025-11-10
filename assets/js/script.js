@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
         visualizerDots.forEach((dot, index) => {
             const activationLevel = (index + 1) / DOT_COUNT;
             if (volume > activationLevel * 0.1) { // 0.1 es un factor de sensibilidad
-                dot.style.backgroundColor = '#007bff';
+                dot.style.backgroundColor = '#285e62';
                 dot.style.transform = `scale(${1 + volume * 2})`;
             } else {
                 dot.style.backgroundColor = '#d1d5db';
