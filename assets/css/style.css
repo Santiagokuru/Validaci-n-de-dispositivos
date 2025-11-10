@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #007bff;
+    --primary-color: #285e62;
     --success-color: #28a745;
     --danger-color: #dc3545;
     --light-gray: #f8f9fa;
@@ -42,7 +42,7 @@ body {
 }
 
 .modal-content {
-    background-color: white;
+    background-color: #f2b23e;
     padding: 2rem;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
@@ -69,8 +69,13 @@ body {
 }
 
 .modal-header {
-    text-align: left;
+    width: 350px;
+    background-color: rgba(255, 255, 255, 0.81);
+    padding: 10px 30px;
+    text-align: center;
     margin-bottom: 1.5rem;
+    margin-left: 200pxx;
+    border-radius: 20px;
 }
 
 .modal-header h2 {
@@ -223,10 +228,10 @@ body {
     color: white;
 }
 .btn-primary:hover {
-    background-color: #0056b3;
+    background-color: #285e62;
 }
 .btn-primary:focus {
-    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+    box-shadow: 0 0 0 3px rgba(243, 222, 2, 0.84);
 }
 
 .btn-secondary {
@@ -243,6 +248,9 @@ body {
 
 #open-modal-btn {
     padding: 1rem 2rem;
+    background-color: #f2b23e ;
     font-size: 1.2rem;
     cursor: pointer;
+    border: none;
+    border-radius: 15px;
 }
