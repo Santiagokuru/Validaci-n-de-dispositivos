@@ -1,10 +1,10 @@
 :root {
     --primary-color: #285e62;
-    --success-color: #28a745;
+    --success-color: #285e62;
     --danger-color: #dc3545;
     --light-gray: #f8f9fa;
     --medium-gray: #e9ecef;
-    --dark-gray: #6c757d;
+    --dark-gray: #285e62;
     --text-color: #212529;
     --border-radius: 12px;
     --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -42,7 +42,7 @@ body {
 }
 
 .modal-content {
-    background-color: #f2b23e;
+    background-color: rgb(242, 179, 62);
     padding: 2rem;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
@@ -201,7 +201,7 @@ body {
 .visualizer-dot {
     width: 6px;
     height: 6px;
-    background-color: #d1d5db;
+    background-color: rgb(195, 173, 77);
     border-radius: 50%;
     transition: all 0.1s;
 }
